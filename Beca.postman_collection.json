@@ -1,0 +1,111 @@
+{
+	"info": {
+		"_postman_id": "428de323-84b7-4250-9819-9b3b97043a79",
+		"name": "Beca",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic YXNrZ2ZrZGtsZmpzbGtmajpzZGZzNDUxZHM1ZnNkcw==",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user\": \"vinicius\",\r\n    \"pass\": \"123456789\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/mobile/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"mobile",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Lista compras",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uIjp7Im5vbWUiOiJWaW5pY2l1cyBGcmFnZWxsaSBTZW5mZiIsImVtYWlsIjoidmluaWNpdXNAZnJhZ2VsbGkuY29tLmJyIiwiaWRVc2VyIjoxfSwiaWF0IjoxNjI1MTQ3NzY0LCJleHAiOjE2MjUyMzQxNjR9.4AJe-Uf84XQFKpEEeXaGBR8coJtMrlUhF7HZ8nH_coc",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"idCompraPaginacao\": 30,\r\n    \"dataInicial\": \"\",\r\n    \"dataFinal\": \"\",\r\n    \"idCompra\": \"\",\r\n    \"loja\": \"\",\r\n    \"descricao\": \"\",\r\n    \"valor\": null\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/mobile/timeline/listacompras",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"mobile",
+						"timeline",
+						"listacompras"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Lista cartoes",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uIjp7Im5vbWUiOiJWaW5pY2l1cyBGcmFnZWxsaSBTZW5mZiIsImVtYWlsIjoidmluaWNpdXNAZnJhZ2VsbGkuY29tLmJyIiwiaWRVc2VyIjoxfSwiaWF0IjoxNjI1MTQ2ODI3LCJleHAiOjE2MjUyMzMyMjd9.I2vtETDAURj_9RhZ5HtEtbiFBlzbfA3vvz4OGuINERI",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/api/mobile/timeline/listacartoes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"mobile",
+						"timeline",
+						"listacartoes"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

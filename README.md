@@ -57,10 +57,13 @@ Desenvolva um App Android Nativo em Java ou Kotlin, no qual deve ter:
  - Tela de lista de cartões com lista de compras
 	 - Deve conter em uma única scroll os dois componentes:
 		 - Carrossel de cartões no formato e layout a baixo:
+
 <img src="https://viniciusfragelli.s3-sa-east-1.amazonaws.com/catho/card_suggestion_anim.gif" width="200"/>
-		 - Uma lista de compras com opção de filtro dessa lista para o usuário. Quando o filtro é aplicado, deve-se disparar para o serviço de lista de compras passando o filtro desejável. Também deve conter paginação de 15 em 15 itens da lista. A paginação deve ser acionada quando a scroll chegar no final, disparando para o serviço a solicitação de mais 15 itens usando o ID da compra do ultimo item da lista. A chamadas de serviço ao iniciar a tela devem acontecer em **PARALELO**
- - Deve-se conter tratamentos de erro de serviço indisponível e layout indicando para o usuário que algo deu errado. **O serviços são independentes entre si, logo caso um de erro o app ainda tem que chamar o outro e exibir as informações caso retornem. 
- - Ter uma tela de Filtros para a lista de compras quando o usuário clicar para filtar. Ao aplicar o filtro deve-se retornar os filtros desejaveis para a tela anterior e chamar o serviço.
+
+- Uma lista de compras com opção de filtro dessa lista para o usuário. Quando o filtro é aplicado, deve-se disparar para o serviço de lista de compras passando o filtro desejável. Também deve conter paginação de 15 em 15 itens da lista. A paginação deve ser acionada quando a scroll chegar no final, disparando para o serviço a solicitação de mais 15 itens usando o ID da compra do ultimo item da lista. A chamadas de serviço ao iniciar a tela devem acontecer em **PARALELO**
+
+- Deve-se conter tratamentos de erro de serviço indisponível e layout indicando para o usuário que algo deu errado. **O serviços são independentes entre si, logo caso um de erro o app ainda tem que chamar o outro e exibir as informações caso retornem. 
+- Ter uma tela de Filtros para a lista de compras quando o usuário clicar para filtar. Ao aplicar o filtro deve-se retornar os filtros desejaveis para a tela anterior e chamar o serviço.
 
 ## Requisitos não funcionais para Android 
 
@@ -96,9 +99,9 @@ O App Android deve ser desenvolvido usando as seguintes tecnologias e padrões
 
 ## Cronograma de desenvolvimento
 
-1º semana: Tela de login com chamada do login
-2º semana: Armazenar o usuário e senha e dar a opção de efetuar o login por biometria ou reconhecimento facial
-3º e 4º semana: Construir carrossel de cartões e serviço do carrossel e sua tratativa de erro
-5º e 6º semana: Construir lista de compras e serviço do lista de compras, paginação da lista e sua tratativa de erro
-7º semana: Tela de filtro de lista de compras
-8º semana: Apresentação do resultado
+ - 1º semana: Tela de login com chamada do login
+ - 2º semana: Armazenar o usuário e senha e dar a opção de efetuar o login por biometria ou reconhecimento facial
+ - 3º e 4º semana: Construir carrossel de cartões e serviço do carrossel e sua tratativa de erro
+ - 5º e 6º semana: Construir lista de compras e serviço do lista de compras, paginação da lista e sua tratativa de erro
+ - 7º semana: Tela de filtro de lista de compras
+ - 8º semana: Apresentação do resultado
